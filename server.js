@@ -63,7 +63,7 @@ app.get('/images/fetch/:imgID', (req, res) => {
         dbObj.collection('images').findOne(ObjectId(req.params.imgID), (err, result) => {
             if (err) throw err;
 
-            res.send("<img src='/images/" + result.name + "'>");
+            res.render(`${__dirname}/public/image.html`, {image: result.name});
             db.close();
         });
     });

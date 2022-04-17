@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="KuByX">
+        <meta property="og:image" content="/images/<%= image %>">
 
         <link rel="stylesheet" href="/css/style.css">
         <link rel="stylesheet" href="/css/fonts.css">
@@ -13,8 +14,8 @@
     </head>
     <body>
         <div class="center">
-            <h1>You can share this URL with your friends!</h1>
-            <p><%= shareUrl %></p>
+            <h1>Here's that image!</h1>
+            <img src="/images/<%= image %>" height="480" width="480">
         </div>
     </body>
 </html>
